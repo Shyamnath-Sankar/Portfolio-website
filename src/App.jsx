@@ -1,10 +1,11 @@
+import { useState } from 'react';
+import Navbar from './sections/Navbar.jsx';
 import Hero from './sections/Hero.jsx';
 import About from './sections/About.jsx';
-import Footer from './sections/Footer.jsx';
-import Navbar from './sections/Navbar.jsx';
 import Contact from './sections/Contact.jsx';
-import Clients from './sections/Clients.jsx';
+import Footer from './sections/Footer.jsx';
 import Projects from './sections/Projects.jsx';
+import ChatBox from './components/ChatBox.jsx';
 import WorkExperience from './sections/Experience.jsx';
 
 const App = () => {
@@ -13,8 +14,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <ChatBox />
       <Projects />
-      <Clients />
       <WorkExperience />
       <Contact />
       <Footer />

@@ -26,9 +26,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Shyamnath Sankar',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'shyamnathsankar123@gmail.com',
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
@@ -38,7 +38,7 @@ const Contact = () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: 'Thank you for your message 😃',
+            text: 'Thank you for your message',
             type: 'success',
           });
 
@@ -57,7 +57,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: "I didn't receive your message",
             type: 'danger',
           });
         },
@@ -77,6 +77,14 @@ const Contact = () => {
             Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
             life, I’m here to help.
           </p>
+
+          <div className="flex flex-col gap-3 text-slate-500">
+            <p>
+              I'm interested in freelance opportunities and full-time positions. However, if you have other request or question,
+              don't hesitate to contact me using below form either.
+            </p>
+            <p>Email: shyamnathsankar123@gmail.com</p>
+          </div>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">

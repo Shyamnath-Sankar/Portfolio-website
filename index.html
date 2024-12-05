@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/logo-1933884.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shyamnath Sankar</title>
+    <script>
+      window.onload = function() {
+        if (!window.location.hash) {
+          window.scrollTo(0, 0);
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

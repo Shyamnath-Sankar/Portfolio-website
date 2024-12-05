@@ -1,4 +1,3 @@
-import { Leva } from 'leva';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
@@ -35,11 +34,9 @@ const Hero = () => {
         <Canvas 
           className="w-full h-full"
           dpr={[1, Math.min(window.devicePixelRatio, 2)]} 
-          performance={{ min: 0.5 }} 
-          >
+          performance={{ min: 0.5 }}
+        >
           <Suspense fallback={<CanvasLoader />}>
-            {/* To hide controller */}
-            <Leva hidden />
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
             <HeroCamera isMobile={isMobile}>
@@ -48,7 +45,7 @@ const Hero = () => {
                 position={sizes.deskPosition} 
                 rotation={[0.1, -Math.PI, 0]}
                 frustumCulled={true}
-                />
+              />
             </HeroCamera>
 
             <group>

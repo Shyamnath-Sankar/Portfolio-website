@@ -1,24 +1,28 @@
 export const navLinks = [
   {
-    id: 1,
-    name: 'Home',
-    href: '#home',
+    id: "home",
+    title: "Home"
   },
   {
-    id: 2,
-    name: 'About',
-    href: '#about',
+    id: "about",
+    title: "About"
   },
   {
-    id: 3,
-    name: 'Work',
-    href: '#work',
+    id: "projects",
+    title: "Projects"
   },
   {
-    id: 4,
-    name: 'Contact',
-    href: '#contact',
+    id: "experience",
+    title: "Experience"
   },
+  {
+    id: "chat",
+    title: "Chat"
+  },
+  {
+    id: "contact",
+    title: "Contact"
+  }
 ];
 
 export const clientReviews = [
